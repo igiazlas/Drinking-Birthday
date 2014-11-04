@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF635B791A0920AC000CAA2F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC9ADFD1A090B0D00280330 /* NotificationCenter.framework */; };
+		BF635B7F1A0920AC000CAA2F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF635B7E1A0920AC000CAA2F /* TodayViewController.m */; };
+		BF635B811A0920AC000CAA2F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF635B801A0920AC000CAA2F /* MainInterface.storyboard */; };
+		BF635B841A0920AC000CAA2F /* Drinking Birthday Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF635B781A0920AC000CAA2F /* Drinking Birthday Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BFC9ADD41A08F42100280330 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC9ADD31A08F42100280330 /* main.m */; };
 		BFC9ADD71A08F42100280330 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC9ADD61A08F42100280330 /* AppDelegate.m */; };
 		BFC9ADDA1A08F42100280330 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC9ADD91A08F42100280330 /* ViewController.m */; };
@@ -17,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF635B821A0920AC000CAA2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC9ADC61A08F42100280330 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF635B771A0920AC000CAA2F;
+			remoteInfo = "Drinking Birthday Widget";
+		};
 		BFC9ADE81A08F42200280330 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFC9ADC61A08F42100280330 /* Project object */;
@@ -26,7 +37,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFC9AE0D1A090B0D00280330 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF635B841A0920AC000CAA2F /* Drinking Birthday Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BF635B781A0920AC000CAA2F /* Drinking Birthday Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Drinking Birthday Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF635B7C1A0920AC000CAA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF635B7D1A0920AC000CAA2F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		BF635B7E1A0920AC000CAA2F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		BF635B801A0920AC000CAA2F /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BFC9ADCE1A08F42100280330 /* Drinking Birthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drinking Birthday.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC9ADD21A08F42100280330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC9ADD31A08F42100280330 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,9 +70,18 @@
 		BFC9ADE71A08F42200280330 /* Drinking BirthdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drinking BirthdayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC9ADEC1A08F42200280330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC9ADED1A08F42200280330 /* Drinking_BirthdayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drinking_BirthdayTests.m; sourceTree = "<group>"; };
+		BFC9ADFD1A090B0D00280330 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF635B751A0920AC000CAA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF635B791A0920AC000CAA2F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFC9ADCB1A08F42100280330 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +99,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF635B7A1A0920AC000CAA2F /* Drinking Birthday Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BF635B7D1A0920AC000CAA2F /* TodayViewController.h */,
+				BF635B7E1A0920AC000CAA2F /* TodayViewController.m */,
+				BF635B801A0920AC000CAA2F /* MainInterface.storyboard */,
+				BF635B7B1A0920AC000CAA2F /* Supporting Files */,
+			);
+			path = "Drinking Birthday Widget";
+			sourceTree = "<group>";
+		};
+		BF635B7B1A0920AC000CAA2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF635B7C1A0920AC000CAA2F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BFC9ADC51A08F42100280330 = {
 			isa = PBXGroup;
 			children = (
 				BFC9ADD01A08F42100280330 /* Drinking Birthday */,
 				BFC9ADEA1A08F42200280330 /* Drinking BirthdayTests */,
+				BF635B7A1A0920AC000CAA2F /* Drinking Birthday Widget */,
+				BFC9ADFC1A090B0D00280330 /* Frameworks */,
 				BFC9ADCF1A08F42100280330 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +134,7 @@
 			children = (
 				BFC9ADCE1A08F42100280330 /* Drinking Birthday.app */,
 				BFC9ADE71A08F42200280330 /* Drinking BirthdayTests.xctest */,
+				BF635B781A0920AC000CAA2F /* Drinking Birthday Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,9 +180,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BFC9ADFC1A090B0D00280330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC9ADFD1A090B0D00280330 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF635B771A0920AC000CAA2F /* Drinking Birthday Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF635B851A0920AC000CAA2F /* Build configuration list for PBXNativeTarget "Drinking Birthday Widget" */;
+			buildPhases = (
+				BF635B741A0920AC000CAA2F /* Sources */,
+				BF635B751A0920AC000CAA2F /* Frameworks */,
+				BF635B761A0920AC000CAA2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drinking Birthday Widget";
+			productName = "Drinking Birthday Widget";
+			productReference = BF635B781A0920AC000CAA2F /* Drinking Birthday Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BFC9ADCD1A08F42100280330 /* Drinking Birthday */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFC9ADF11A08F42200280330 /* Build configuration list for PBXNativeTarget "Drinking Birthday" */;
@@ -129,10 +215,12 @@
 				BFC9ADCA1A08F42100280330 /* Sources */,
 				BFC9ADCB1A08F42100280330 /* Frameworks */,
 				BFC9ADCC1A08F42100280330 /* Resources */,
+				BFC9AE0D1A090B0D00280330 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BF635B831A0920AC000CAA2F /* PBXTargetDependency */,
 			);
 			name = "Drinking Birthday";
 			productName = "Drinking Birthday";
@@ -166,6 +254,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "John Giazlas";
 				TargetAttributes = {
+					BF635B771A0920AC000CAA2F = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					BFC9ADCD1A08F42100280330 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -190,11 +281,20 @@
 			targets = (
 				BFC9ADCD1A08F42100280330 /* Drinking Birthday */,
 				BFC9ADE61A08F42200280330 /* Drinking BirthdayTests */,
+				BF635B771A0920AC000CAA2F /* Drinking Birthday Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF635B761A0920AC000CAA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF635B811A0920AC000CAA2F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFC9ADCC1A08F42100280330 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +315,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF635B741A0920AC000CAA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF635B7F1A0920AC000CAA2F /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFC9ADCA1A08F42100280330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +344,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF635B831A0920AC000CAA2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF635B771A0920AC000CAA2F /* Drinking Birthday Widget */;
+			targetProxy = BF635B821A0920AC000CAA2F /* PBXContainerItemProxy */;
+		};
 		BFC9ADE91A08F42200280330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BFC9ADCD1A08F42100280330 /* Drinking Birthday */;
@@ -263,46 +376,15 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BFC9ADEF1A08F42200280330 /* Debug */ = {
+		BF635B861A0920AC000CAA2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				INFOPLIST_FILE = "Drinking Birthday Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		BFC9ADF01A08F42200280330 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -339,16 +421,6 @@
 			};
 			name = Release;
 		};
-		BFC9ADF21A08F42200280330 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Drinking Birthday/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
 		BFC9ADF31A08F42200280330 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,25 +430,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
-		};
-		BFC9ADF51A08F42200280330 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Drinking BirthdayTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinking Birthday.app/Drinking Birthday";
-			};
-			name = Debug;
 		};
 		BFC9ADF61A08F42200280330 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -396,10 +449,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF635B851A0920AC000CAA2F /* Build configuration list for PBXNativeTarget "Drinking Birthday Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF635B861A0920AC000CAA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BFC9ADC91A08F42100280330 /* Build configuration list for PBXProject "Drinking Birthday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFC9ADEF1A08F42200280330 /* Debug */,
 				BFC9ADF01A08F42200280330 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -408,18 +467,18 @@
 		BFC9ADF11A08F42200280330 /* Build configuration list for PBXNativeTarget "Drinking Birthday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFC9ADF21A08F42200280330 /* Debug */,
 				BFC9ADF31A08F42200280330 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC9ADF41A08F42200280330 /* Build configuration list for PBXNativeTarget "Drinking BirthdayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFC9ADF51A08F42200280330 /* Debug */,
 				BFC9ADF61A08F42200280330 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *drinkingAgeTextField;
+@property (strong, nonatomic) IBOutlet UIDatePicker *birthdayDatePicker;
+@property (strong, nonatomic) IBOutlet UILabel *isOkorNotLabel;
+
+@property (nonatomic) int drinkingAge;
+
+- (IBAction)updateButtonPressed:(UIButton *)sender;
+- (IBAction)autoButtonPressed:(UIButton *)sender;
 
 @end
 
